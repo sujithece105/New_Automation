@@ -12,9 +12,9 @@ logger = logging.getLogger(__name__)
 class SystemManager:
     def __init__(self, ssh_host, ssh_username, ssh_password):
         self.docker_client = docker.from_env()
-        self.ssh_host = ssh_host
-        self.ssh_username = ssh_username
-        self.ssh_password = ssh_password
+        self.ssh_host = '3.85.159.160'
+        self.ssh_username = 'ec2-user'
+        self.ssh_password = 'password'
         
     def create_docker_container(self, image_name, container_name):
         """Create a Docker container"""
